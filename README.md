@@ -1,1 +1,1 @@
-# wedding-planning
+wedding planning application
