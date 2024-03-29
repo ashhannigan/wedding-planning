@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     mode: 'development',
-    entry: '/server/server.jsx',
+    entry: '/client/client.js',
     output: {
         path: path.resolve(__dirname, 'bundle'),
         filename: 'bundle.js',
@@ -26,7 +26,18 @@ module.exports = {
             {
                 test: /\.css$/i,
                 use: ['style-loader', 'css-loader'],
-            }
+            },
+            {
+                test: /\.(png|jpe?g|gif)$/i,
+                use: [
+                  {
+                    loader: 'url-loader',
+                    options: {
+                      limit: 8192, // Use url-loader for files smaller than 8kb, otherwise fallback to file-loader
+                    },
+                  },
+                ],
+              }
         ]
     },
     plugins: [

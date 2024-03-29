@@ -4,7 +4,7 @@
   "description": "wedding planning application",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server/server.jsx",
+    "start": "nodemon server/server.js",
     "build": "webpack",
     "dev": "webpack serve --open"
   },
