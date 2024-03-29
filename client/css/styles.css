@@ -1,3 +1,7 @@
 body {
-    background-color: bisque;
+    background-color: antiquewhite;
+}
+
+#login-footer {
+    font-size: 10px;
 }
