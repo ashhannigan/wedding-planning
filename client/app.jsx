@@ -15,7 +15,7 @@ function App() {
             {/* <h1>{Login()}</h1> */}
             <header class="flex-container"> 
                 <p class="home-page-header"><a> Home </a></p> 
-                <p class="home-page-header"><a href="/components/calendar.jsx"> Calendar </a></p> 
+                <p class="home-page-header"><a href="/calendar"> Calendar </a></p> 
                 <p class="home-page-header"><a> Guests </a></p> 
                 <button id="btn-relax">{RelaxMode()}</button>
             </header>
@@ -25,7 +25,7 @@ function App() {
             </div>
             <footer>
                 <p class="home-page-footer"><a> Home </a></p>
-                <p class="home-page-footer"><a href="/components/calendar.jsx"> Calendar </a></p> 
+                <p class="home-page-footer"><a href="/calendar"> Calendar </a></p> 
                 <p class="home-page-footer"><a> Guests </a></p> 
             </footer>
         </span>

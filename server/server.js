@@ -10,6 +10,9 @@ app.get('/', (req, res) => {
 
 app.use(express.json());
 
+app.get('/calendar', (req,res) => {
+    res.sendFile(path.join(__dirname, '..', '/client', '/components', '/calendar.jsx' ))
+});
 //global error handler middleware
 app.use((err, req, res, next) => {
     const defaultError = {
