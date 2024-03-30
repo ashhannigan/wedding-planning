@@ -5,3 +5,30 @@ body {
 #login-footer {
     font-size: 10px;
 }
+
+.flex-container, .home-page-header, .relax{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    background-color: rgb(225, 192, 255);
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(192, 248, 238);
+    color: white;
+    text-align: center;
+}
+
+/* #btn-relax {
+    border-radius: 10%;
+    background-color: rgb(210, 210, 210);
+} */
+
+#btn-relax:hover {
+    cursor: pointer;
+    }

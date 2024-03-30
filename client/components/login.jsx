@@ -12,10 +12,10 @@ function Login () {
     return (
         <div className="login-page">
              <label>Username:</label>
-            <input type="email"></input>
+            <input type="email" id="email" name="email"></input>
 
             <label>Password:</label>
-            <input type="password"></input>
+            <input type="password" id="password" name="password"></input>
             <button onClick={Login}>Login</button>
 
             <footer id="login-footer">Don't have an account?<input type="checkbox"></input>

@@ -28,6 +28,18 @@ module.exports = {
                 use: ['style-loader', 'css-loader'],
             },
             {
+                test: /\.(mp3)$/,
+                use: [
+                  {
+                    loader: 'file-loader',
+                    options: {
+                      name: '[name].[ext]',
+                      outputPath: 'audio/',
+                    },
+                },
+            ],
+        },
+            {
                 test: /\.(png|jpe?g|gif)$/i,
                 use: [
                   {
