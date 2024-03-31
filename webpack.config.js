@@ -3,10 +3,11 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     mode: 'development',
-    entry: '/client/app.jsx',
+    entry: './client/app.jsx',
     output: {
         path: path.resolve(__dirname, 'bundle'),
         filename: 'bundle.js',
+        publicPath: "/",
     },
     module: {
         rules: [
@@ -40,12 +41,13 @@ module.exports = {
             ],
         },
             {
-                test: /\.(png|jpe?g|gif)$/i,
+                test: /\.(png|jpe?g|gif|svg)$/i,
                 use: [
                   {
                     loader: 'url-loader',
                     options: {
-                      limit: 8192, // Use url-loader for files smaller than 8kb, otherwise fallback to file-loader
+                      limit: 8192, 
+                      outputPath: 'images/'
                     },
                   },
                 ],
@@ -56,7 +58,8 @@ module.exports = {
         static: {
           publicPath: '/',
           directory: path.resolve(__dirname)
-        }
+        },
+        historyApiFallback: true,
       },
     plugins: [
         new HtmlWebpackPlugin({

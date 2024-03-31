@@ -1,34 +1,63 @@
+
 body {
-    background-color: antiquewhite;
+    /* background-color: antiquewhite; */
+    height: 100vh;
+    margin: 0;
 }
 
 #login-footer {
     font-size: 10px;
 }
 
-.flex-container, .home-page-header, .relax{
+.flex-container, .relax{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     width: 100%;
+}
+
+.heading-tabs {
+    font-size: 20px;
     background-color: rgb(225, 192, 255);
+    margin: 0; 
+    padding: 0;
 }
 
 footer {
     position: fixed;
     left: 0;
     bottom: 0;
+    /* height: 50px; */
     width: 100%;
-    background-color: rgb(192, 248, 238);
-    color: white;
-    text-align: center;
+    background-color: rgb(169, 210, 245);
+    text-align: justify;
+    font-size: 20px;
 }
 
-/* #btn-relax {
+#btn-relax {
     border-radius: 10%;
-    background-color: rgb(210, 210, 210);
-} */
+    align-items: flex-end;
+}
 
 #btn-relax:hover {
     cursor: pointer;
-    }
+}
+
+#btn-profile {
+    border-radius: 75%;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    background-color: rgb(248, 245, 221);
+    align-items: center;
+    justify-content: center;
+}
+
+.login-page {
+    background-size: cover;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh;
+   
+}

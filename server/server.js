@@ -1,7 +1,7 @@
 const path = require('path');
 const express = require('express');
-
 const app = express();
+const homeRouter = require('./routes/home-route.js')
 const PORT = 3000;
 
 app.get('/', (req, res) => {
@@ -10,9 +10,8 @@ app.get('/', (req, res) => {
 
 app.use(express.json());
 
-app.get('/calendar', (req,res) => {
-    res.sendFile(path.join(__dirname, '..', '/client', '/components', '/calendar.jsx' ))
-});
+// app.use('/home', homeRouter);
+
 //global error handler middleware
 app.use((err, req, res, next) => {
     const defaultError = {

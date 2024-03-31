@@ -1,7 +1,6 @@
 // current model: relax-mode music does not stop automatically
 
 import React, { useState, useEffect } from 'react';
-import ReactDOM, { createRoot } from 'react-dom';
 import useSound from 'use-sound';
 import vibe from '../audio/vibe.mp3';
 
