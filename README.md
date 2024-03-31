@@ -27,3 +27,5 @@ on heading tabs:
 - upload profile image instead of button?
 
 -upload home border image to background
+
+**guestlist and guestaddress tables are MADE BUT EMPTY
