@@ -22,7 +22,9 @@ app.get('/', (req, res) => {
 
 app.use(express.json());
 
-// app.use('/home', homeRouter);
+// app.use('/home', (req,res) => {
+//     return res.status(200).sendFile(path.join(__dirname, '../client/pages/home-page.jsx'));
+// });
 
 //api-test code
 

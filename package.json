@@ -4,17 +4,23 @@
   "description": "wedding planning application",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server/server.js",
+    "start": "node server/server.js",
     "build": "webpack",
     "dev": "webpack serve --open"
   },
   "author": "ashley hannigan",
   "license": "ISC",
   "dependencies": {
+    "@popperjs/core": "^2.11.8",
+    "bootstrap": "^5.3.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "redux": "^5.0.1",
-    "url-loader": "^4.1.1"
+    "url-loader": "^4.1.1",
+    "body-parser": "^1.20.2",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "pg": "^8.11.3"
   },
   "devDependencies": {
     "@babel/core": "^7.24.3",
@@ -26,6 +32,7 @@
     "@fortawesome/free-solid-svg-icons": "^6.5.1",
     "@fortawesome/react-fontawesome": "^0.2.0",
     "@google-cloud/local-auth": "^2.1.0",
+    "autoprefixer": "^10.4.19",
     "babel-loader": "^9.1.3",
     "cross-env": "^7.0.3",
     "css-loader": "^6.10.0",
@@ -35,7 +42,10 @@
     "googleapis": "^105.0.0",
     "html-webpack-plugin": "^5.6.0",
     "nodemon": "^3.1.0",
+    "postcss-loader": "^8.1.1",
     "react-router-dom": "^6.22.3",
+    "sass": "^1.72.0",
+    "sass-loader": "^14.1.1",
     "style-loader": "^3.3.4",
     "use-sound": "^4.0.1",
     "webpack": "^5.91.0",

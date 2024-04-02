@@ -11,10 +11,10 @@ function Login() {
     }
 
     return (
-        <div className="login-page" style={{ backgroundImage: `url(${aiWedPic})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
+        <div className="login-page" style={{ backgroundImage: `url(${aiWedPic})`, opacity: 0.7, backgroundSize: 'cover', backgroundPosition: 'center'}}>
             <span className="login-container">
                 <label>Username:</label>
-                <input type="email" id="email" name="email" />
+                <input type="email" id="email" name="username" />
                 <br />
 
                 <label className="password-login">Password:</label>
