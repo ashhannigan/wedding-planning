@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Login from "./login.jsx";
 import Calendar from "./calendar.jsx"
-import RelaxMode from "../components/relax-mode.jsx";
 import DarkMode from "../components/dark-mode.jsx";
+import RelaxMode from "../components/relax-mode.jsx";
 
 function Vendor () {
     const [currentDate, setCurrentDate] = useState(new Date());

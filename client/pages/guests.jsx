@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import DarkMode from "../components/dark-mode.jsx";
-
+import RelaxMode from "../components/relax-mode.jsx";
 
 function GuestList () {
     return (
