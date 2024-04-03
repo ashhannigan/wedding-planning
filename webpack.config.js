@@ -18,51 +18,60 @@ module.exports = {
                     loader: 'babel-loader',
                     options: {
                         presets: [
-                            ['@babel/preset-env'],
-                            ['@babel/preset-react']
+                            '@babel/preset-env',
+                            '@babel/preset-react'
                         ]
                     }
                 }
             },
             {
-                test: /\.css$/i,
+                test: /\.css$/,
                 use: ['style-loader', 'css-loader'],
             },
             {
-              test: /\.s[ac]ss$/i,
-              use: [
-                // Creates `style` nodes from JS strings
-                "style-loader",
-                // Translates CSS into CommonJS
-                "css-loader",
-                // Compiles Sass to CSS
-                "sass-loader",
-              ],
-        },
+                test: /\.s[ac]ss$/,
+                use: [
+                    'style-loader',
+                    'css-loader',
+                    'sass-loader',
+                ],
+            },
             {
                 test: /\.(png|jpe?g|gif|svg)$/i,
                 use: [
-                  {
-                    loader: 'url-loader',
-                    options: {
-                      limit: 8192, 
-                      outputPath: 'images/'
+                    {
+                        loader: 'url-loader',
+                        options: {
+                            limit: 8192,
+                            outputPath: 'images/',
+                        },
                     },
-                  },
                 ],
-              }
-        ]
+            },
+            {
+                test: /\.(mp3)$/,
+                use: [
+                    {
+                        loader: 'file-loader',
+                        options: {
+                            name: '[name].[ext]',
+                            outputPath: 'audio/',
+                        },
+                    },
+                ],
+            },
+        ],
     },
     devServer: {
         static: {
-          publicPath: '/',
-          directory: path.resolve(__dirname)
+            publicPath: '/',
+            directory: path.resolve(__dirname),
         },
         historyApiFallback: true,
-      },
+    },
     plugins: [
         new HtmlWebpackPlugin({
-            template: 'index.html', 
-        })
-    ]
+            template: 'index.html',
+        }),
+    ],
 };

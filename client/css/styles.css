@@ -2,7 +2,6 @@
 body {
     /* background-color: antiquewhite; */
     height: 100vh;
-    margin: 0;
 }
 
 #login-footer {
@@ -12,15 +11,16 @@ body {
 .flex-container, .relax{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 4rem;
     width: 100%;
 }
 
 .heading-tabs {
     font-size: 20px;
     background-color: rgb(225, 192, 255);
-    margin: 0; 
-    padding: 0;
+    /* margin: 0; 
+    padding: 0; */
 }
 
 footer {
@@ -43,16 +43,6 @@ footer {
     cursor: pointer;
 }
 
-#btn-profile {
-    border-radius: 75%;
-    height: 50px;
-    width: 50px;
-    text-align: center;
-    background-color: rgb(248, 245, 221);
-    align-items: center;
-    justify-content: center;
-}
-
 .login-page {
     background-size: cover;
     display: flex;
@@ -60,4 +50,13 @@ footer {
     align-items: center; 
     height: 100vh;
    
+}
+
+.vendor-list-fieldset {
+    width: max-content;
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* Stack flex items vertically */
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
 }
