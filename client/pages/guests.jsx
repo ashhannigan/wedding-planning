@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
+import DarkMode from "../components/dark-mode.jsx";
+
 
 function GuestList () {
-
-
     return (
         <div>
             <header className="flex-container heading-tabs"> 

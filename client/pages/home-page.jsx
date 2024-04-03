@@ -6,6 +6,7 @@ import RelaxMode from "../components/relax-mode.jsx";
 import DarkMode from "../components/dark-mode.jsx";
 import Profile from "../components/profile-mode.jsx";
 import ProfileMode from "../components/profile-mode.jsx";
+import Themes from "./themes.jsx";
 // import store from './store';
 import React, { useState} from 'react';
 import ReactDOM, { createRoot } from 'react-dom';
@@ -27,9 +28,9 @@ function HomePage() {
                 <p id="btn-relax">{RelaxMode()}</p>
                 <p id="btn-dark">{DarkMode()}</p>
             </header>
-        <section>
+        <section id="home-section"> 
                 <button id="btn-profile" onClick={handleClick}> Edit Profile </button>
-                <h1> Home </h1>
+                <p>{<Themes />}</p>
 
                 {/* <h1 class="calendar-test">{<Calendar />} Calendar</h1> */}
                 {/* <h1 class="vendor-test">{<Vendor />}</h1> */}
